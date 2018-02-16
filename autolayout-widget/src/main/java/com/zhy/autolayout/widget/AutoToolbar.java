@@ -38,9 +38,9 @@ public class AutoToolbar extends Toolbar {
         mTextSize = loadTextSizeFromTextAppearance(titleTextAppearance);
         mSubTextSize = loadTextSizeFromTextAppearance(subtitleTextAppearance);
 
-        TypedArray menuA = context.getTheme().obtainStyledAttributes(attrs, R.styleable.Theme,
+        TypedArray menuA = context.getTheme().obtainStyledAttributes(attrs, R.styleable.AppCompatTheme,
                 defStyleAttr, R.style.ThemeOverlay_AppCompat);
-        int menuTextAppearance = menuA.getResourceId(R.styleable.Theme_actionBarTheme,
+        int menuTextAppearance = menuA.getResourceId(R.styleable.AppCompatTheme_actionBarTheme,
                 R.style.ThemeOverlay_AppCompat_ActionBar);
         int menuTextSize = loadTextSizeFromTextAppearance(menuTextAppearance);
 
